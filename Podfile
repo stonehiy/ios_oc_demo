@@ -6,6 +6,7 @@ target 'iOSOCDemo' do
   use_frameworks!
 
   # Pods for iOSOCDemo
+  pod 'Masonry'
 
   target 'iOSOCDemoTests' do
     inherit! :search_paths
