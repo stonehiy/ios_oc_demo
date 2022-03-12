@@ -9,6 +9,10 @@
 
 @interface ViewController : UIViewController
 
+- (void) addRootLayout;
+- (IBAction)btnEventTouchDown:(UIButton*) sender;
+- (IBAction)btnEventTouchUpInside:(UIButton*) sender;
+
 
 @end
 

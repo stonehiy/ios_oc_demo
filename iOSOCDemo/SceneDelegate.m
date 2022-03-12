@@ -29,7 +29,9 @@
     
     // 绑定ViewController
     ViewController* vc =  [[ViewController alloc] init];
-    [self.window setRootViewController:vc];
+    UINavigationController *nv = [[UINavigationController alloc] initWithRootViewController:vc];
+
+    [self.window setRootViewController:nv];
     [self.window makeKeyAndVisible];
 
 
