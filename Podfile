@@ -7,6 +7,8 @@ target 'iOSOCDemo' do
 
   # Pods for iOSOCDemo
   pod 'Masonry'
+  pod 'AFNetworking','~>4.0'
+  
 
   target 'iOSOCDemoTests' do
     inherit! :search_paths

@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-iOSOCDemo-iOSOCDemoUITests/Pods-iOSOCDemo-iOSOCDemoUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework
 ${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework

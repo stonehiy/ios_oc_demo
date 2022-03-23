@@ -8,6 +8,7 @@
 #import "ViewController.h"
 #import <Masonry.h>
 #import "HomeViewController.h"
+#import "AFViewController.h"
 
 
 @interface ViewController ()
@@ -55,7 +56,7 @@
     [_btn2.layer setCornerRadius:5.0];
     
 //    [_btn2 addTarget:self action:@selector(btnEventTouchDown:) forControlEvents:UIControlEventTouchDown];
-//    [_btn2 addTarget:self action:@selector(btnEventTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
+    [_btn2 addTarget:self action:@selector(btn2OnClike) forControlEvents:UIControlEventTouchUpInside];
    
     [self.view addSubview:_btn2];
     
@@ -94,6 +95,12 @@
     NSLog(@"--%@",hv);
     
     
+    
+}
+-(void)btn2OnClike{
+    AFViewController* hv =  [[AFViewController alloc] init];
+    //    HomeViewController* hv =  [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];
+    [self.navigationController pushViewController:hv animated:YES];
     
 }
 

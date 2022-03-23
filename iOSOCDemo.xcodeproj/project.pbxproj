@@ -19,6 +19,10 @@
 		BA2352CB27D89A4100E7715D /* iOSOCDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2352CA27D89A4100E7715D /* iOSOCDemoTests.m */; };
 		BA2352D527D89A4100E7715D /* iOSOCDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2352D427D89A4100E7715D /* iOSOCDemoUITests.m */; };
 		BA2352D727D89A4100E7715D /* iOSOCDemoUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2352D627D89A4100E7715D /* iOSOCDemoUITestsLaunchTests.m */; };
+		BA31F30027E9A6000035C99A /* AFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA31F2FE27E9A6000035C99A /* AFViewController.m */; };
+		BA31F30127E9A6000035C99A /* AFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA31F2FF27E9A6000035C99A /* AFViewController.xib */; };
+		BA31F30727E9BA320035C99A /* Chapters.m in Sources */ = {isa = PBXBuildFile; fileRef = BA31F30627E9BA320035C99A /* Chapters.m */; };
+		BA31F30B27E9C5C00035C99A /* Result.m in Sources */ = {isa = PBXBuildFile; fileRef = BA31F30A27E9C5C00035C99A /* Result.m */; };
 		BA89C13C27DB38B600FA728F /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA89C13A27DB38B600FA728F /* HomeViewController.m */; };
 		BA89C13D27DB38B600FA728F /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA89C13B27DB38B600FA728F /* HomeViewController.xib */; };
 		C1F5DC0CD93AE973F4039FE6 /* Pods_iOSOCDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE9055F62E59BB9B066BC4C6 /* Pods_iOSOCDemo.framework */; };
@@ -64,6 +68,14 @@
 		BA2352D027D89A4100E7715D /* iOSOCDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSOCDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA2352D427D89A4100E7715D /* iOSOCDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSOCDemoUITests.m; sourceTree = "<group>"; };
 		BA2352D627D89A4100E7715D /* iOSOCDemoUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSOCDemoUITestsLaunchTests.m; sourceTree = "<group>"; };
+		BA31F2FD27E9A6000035C99A /* AFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFViewController.h; sourceTree = "<group>"; };
+		BA31F2FE27E9A6000035C99A /* AFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFViewController.m; sourceTree = "<group>"; };
+		BA31F2FF27E9A6000035C99A /* AFViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AFViewController.xib; sourceTree = "<group>"; };
+		BA31F30527E9BA320035C99A /* Chapters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Chapters.h; sourceTree = "<group>"; };
+		BA31F30627E9BA320035C99A /* Chapters.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Chapters.m; sourceTree = "<group>"; };
+		BA31F30827E9C5220035C99A /* IResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IResult.h; sourceTree = "<group>"; };
+		BA31F30927E9C5C00035C99A /* Result.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Result.h; sourceTree = "<group>"; };
+		BA31F30A27E9C5C00035C99A /* Result.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Result.m; sourceTree = "<group>"; };
 		BA89C13927DB38B600FA728F /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		BA89C13A27DB38B600FA728F /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		BA89C13B27DB38B600FA728F /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
@@ -149,6 +161,7 @@
 		BA2352AD27D89A3F00E7715D /* iOSOCDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BA31F30227E9B9580035C99A /* model */,
 				BA87FBD927DC4AF3004558E9 /* component */,
 				BA89C13727DB381000FA728F /* ui */,
 				BA2352AE27D89A3F00E7715D /* AppDelegate.h */,
@@ -183,6 +196,28 @@
 			path = iOSOCDemoUITests;
 			sourceTree = "<group>";
 		};
+		BA31F2FC27E9A5C70035C99A /* af */ = {
+			isa = PBXGroup;
+			children = (
+				BA31F2FD27E9A6000035C99A /* AFViewController.h */,
+				BA31F2FE27E9A6000035C99A /* AFViewController.m */,
+				BA31F2FF27E9A6000035C99A /* AFViewController.xib */,
+			);
+			path = af;
+			sourceTree = "<group>";
+		};
+		BA31F30227E9B9580035C99A /* model */ = {
+			isa = PBXGroup;
+			children = (
+				BA31F30527E9BA320035C99A /* Chapters.h */,
+				BA31F30627E9BA320035C99A /* Chapters.m */,
+				BA31F30827E9C5220035C99A /* IResult.h */,
+				BA31F30927E9C5C00035C99A /* Result.h */,
+				BA31F30A27E9C5C00035C99A /* Result.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		BA87FBD927DC4AF3004558E9 /* component */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +228,7 @@
 		BA89C13727DB381000FA728F /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				BA31F2FC27E9A5C70035C99A /* af */,
 				BA89C13827DB389F00FA728F /* home */,
 			);
 			path = ui;
@@ -318,6 +354,7 @@
 			files = (
 				BA2352BE27D89A4100E7715D /* LaunchScreen.storyboard in Resources */,
 				BA2352BB27D89A4100E7715D /* Assets.xcassets in Resources */,
+				BA31F30127E9A6000035C99A /* AFViewController.xib in Resources */,
 				BA2352B927D89A3F00E7715D /* Main.storyboard in Resources */,
 				BA89C13D27DB38B600FA728F /* HomeViewController.xib in Resources */,
 			);
@@ -448,6 +485,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA2352B627D89A3F00E7715D /* ViewController.m in Sources */,
+				BA31F30027E9A6000035C99A /* AFViewController.m in Sources */,
+				BA31F30B27E9C5C00035C99A /* Result.m in Sources */,
+				BA31F30727E9BA320035C99A /* Chapters.m in Sources */,
 				BA2352B027D89A3F00E7715D /* AppDelegate.m in Sources */,
 				BA2352C127D89A4100E7715D /* main.m in Sources */,
 				BA89C13C27DB38B600FA728F /* HomeViewController.m in Sources */,
